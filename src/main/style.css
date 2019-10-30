@@ -1,0 +1,97 @@
+.parent{
+
+    background: #f2edf3;
+    -fx-background-image: initial;
+    -fx-background-position-x: initial;
+    -fx-background-position-y: initial;
+    -fx-background-size: initial;
+    -fx-background-repeat-x: initial;
+    -fx-background-repeat-y: initial;
+    -fx-background-attachment: initial;
+    -fx-background-origin: initial;
+    -fx-background-clip: initial;
+    -fx-background-color: rgb(242, 237, 243);
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 10,0,1,1 );
+    -fx-effect: innershadow( gaussian ,  rgb(68, 175, 255, 0.8) , 5,0,1,1 );
+}
+
+.logo-text{
+    -fx-font-size: 25;
+    -fx-text-fill: violet;
+}
+
+.side-panel{
+    -fx-background: #ffffff;
+    -fx-background-image: initial;
+    -fx-background-position-x: initial;
+    -fx-background-position-y: initial;
+    -fx-background-size: initial;
+    -fx-background-repeat-x: initial;
+    -fx-background-repeat-y: initial;
+    -fx-background-attachment: initial;
+    -fx-background-origin: initial;
+    -fx-background-clip: initial;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 10,0,1,1 );
+}
+
+.sidebar-button-title{
+    -fx-font-size: 13px;
+    -fx-color: #b66dff;
+}
+
+.sidebar-menu{
+    -fx-background-radius: 8px;
+}
+
+.sidebar-menu:hover, .sidebar-button-title:hover .sidebar-menu{
+    -fx-background-color: rgb(68, 175, 255, 0.8);
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 20,0,1,1 );
+}
+
+.sidebar-menu:hover .sidebar-button-title{
+    -fx-text-fill: #fff;
+}
+
+.dashboard-main-button{
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 20,0,1,1 );
+}
+
+.topbar{
+    -fx-background-color: #e4e2e4;
+}
+
+.dasboard-main-button-panel{
+    -fx-background-color: #fff;
+}
+
+.dashboar-main-account-table{
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 10,0,1,1 );
+}
+.title-top-bar{
+    -fx-font-size: 1.5em;
+    -fx-text-fill: #51c9f5;
+}
+
+.version-label{
+    -fx-text-fill: violet;
+
+    -fx-font-size: 1.1em;
+    -fx-effect: dropshadow( gaussian ,  rgb(68, 175, 255, 0.8) , 20,0,1,1 );
+}
+
+.close-btn{
+    -fx-background-color: #fc5653;
+    -fx-background-radius:15px;
+}
+
+.max-btn{
+    -fx-background-color: #fcdb40;
+    -fx-background-radius:15px;
+}
+
+.minize-btn{
+    -fx-background-color: #29cc41;
+    -fx-background-radius:15px;
+}

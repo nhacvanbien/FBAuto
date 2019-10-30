@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <children>
+      <Pane id="side-panel" fx:id="sidebar" layoutX="1.0" prefHeight="700.0" prefWidth="220.0" styleClass="side-panel" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="63.0" layoutX="27.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/purple-ribbon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="70.0" styleClass="logo-text" stylesheets="@style.css" text="AUTO FB">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font></Label>
+            <Label layoutX="55.0" layoutY="668.0" prefHeight="18.0" prefWidth="91.0" styleClass="version-label" stylesheets="@style.css" text="Version 1.0.0" textAlignment="CENTER" />
+            <Pane layoutX="9.0" layoutY="183.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar-menu" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="56.0" layoutY="11.0" prefHeight="19.0" prefWidth="135.0" styleClass="sidebar-button-title" stylesheets="@style.css" text="Dashboard">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/id-card.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="230.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar-menu" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="53.0" layoutY="11.0" prefHeight="19.0" prefWidth="135.0" styleClass="sidebar-button-title" stylesheets="@style.css" text="Configurations">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/settings.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="290.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar-menu" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="52.0" layoutY="10.0" prefHeight="19.0" prefWidth="135.0" styleClass="sidebar-button-title" stylesheets="@style.css" text="Internet Settings">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="13.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/cloud.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="344.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar-menu" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="51.0" layoutY="11.0" prefHeight="19.0" prefWidth="135.0" styleClass="sidebar-button-title" stylesheets="@style.css" text="Auto Share">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/share.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="commentSettingMenu" layoutX="10.0" layoutY="390.0" prefHeight="40.0" prefWidth="200.0" styleClass="sidebar-menu" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="52.0" layoutY="11.0" prefHeight="19.0" prefWidth="135.0" styleClass="sidebar-button-title" stylesheets="@style.css" text="Comment Settings">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="13.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/comments.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Label layoutX="253.0" layoutY="10.0" styleClass="title-top-bar" stylesheets="@style.css" text="Dashboard" />
+      <Pane fx:id="contenPane" layoutX="223.0" layoutY="39.0" prefHeight="660.0" prefWidth="1076.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="490.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField layoutX="784.0" layoutY="77.0" prefHeight="30.0" prefWidth="71.0" />
+            <Label layoutX="722.0" layoutY="83.0" text="Threads" />
+            <JFXButton alignment="CENTER" layoutX="29.0" layoutY="72.0" prefHeight="40.0" prefWidth="135.0" ripplerFill="#dfe6e8" style="-fx-background-color: rgb(68, 175, 255, 1);" styleClass="dashboard-main-button" stylesheets="@style.css" text="Load accounts" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXButton>
+            <JFXButton alignment="CENTER" layoutX="196.0" layoutY="72.0" prefHeight="40.0" prefWidth="159.0" style="-fx-background-color: rgb(68, 175, 255, 1);" styleClass="dashboard-main-button" stylesheets="@style.css" text="Delete all accounts" textFill="WHITE" />
+            <JFXButton alignment="CENTER" layoutX="380.0" layoutY="72.0" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: rgb(68, 175, 255, 1);" styleClass="dashboard-main-button" stylesheets="@style.css" text="Delete die account" textFill="WHITE" />
+            <JFXButton alignment="CENTER" layoutX="534.0" layoutY="72.0" prefHeight="40.0" prefWidth="135.0" style="-fx-background-color: rgb(68, 175, 255, 1);" styleClass="dashboard-main-button" stylesheets="@style.css" text="Check live" textFill="WHITE" />
+            <TableView layoutX="29.0" layoutY="201.0" prefHeight="445.0" prefWidth="1027.0" style="-fx-background-color: #fff;" stylesheets="@style.css">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="992.0" layoutY="67.0" prefHeight="50.0" prefWidth="50.0" ripplerFill="#fffc4c" rotate="45.0" style="-fx-background-color: #fffc4c; -fx-background-radius: 10;" text=" " textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Label layoutX="1222.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close" prefHeight="15.0" prefWidth="15.0" styleClass="close-btn" stylesheets="@style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="1263.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="minize-btn" stylesheets="@style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="1242.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="15.0" styleClass="max-btn" stylesheets="@style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
